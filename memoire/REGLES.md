@@ -2,7 +2,7 @@
 
 ## Quand Antho envoie « Alerte » + un lien Amazon
 1. Créer une vidéo TikTok avec le **modèle figé** (steelbook centré et agrandi, accroche « NOUVELLE PRÉCOMMANDE OUVERTE », bouton « lien en bio », ligne « Prix et dispo sur Amazon · Lien affilié, sans surcoût »). On change seulement l'affiche, la date et la couleur du fond. **Pas de prix.** Style calme, pas de rouge « urgent » agressif, pas de fond uni.
-2. Ajouter le steelbook dans le bloc `ALERTE-UNE` (4 maximum, retirer le plus ancien) de `steelbook.html` et `radar-steelbook.html`, dans le tableau `STEELBOOKS`, et dans `feed.xml`.
+2. Ajouter le steelbook dans le bloc `ALERTE-UNE` (4 maximum, retirer le plus ancien) de `steelbook.html` et `index.html` (puis `node scripts/sync-hub.mjs` pour recopier `radar-steelbook.html`), dans `data/steelbooks.json`, et dans `feed.xml`.
 3. Mettre à jour le brouillon du mail récap quotidien dans Brevo.
 4. Toujours donner la description TikTok prête à copier : accroche avec titre, date de sortie, lien en bio, ligne d'inscription au mail du soir, mention « lien affilié Amazon », hashtags, **sans prix**.
 5. Si la sortie est le lendemain : ajouter une phrase pour acheter vite.
@@ -41,3 +41,5 @@
 - Suivi : chaque soir, relevé silencieux des stats à 24h et 7j dans STATS.md ; chaque dimanche 12h, rapport hebdo (meilleures/moins bonnes publications, formats en hausse/baisse, meilleures accroches, rétention, recommandations) avant la préparation de la semaine.
 
 - Semaine du 16 nov. : La Question du Daron du samedi 21 nov. publiée à 18h (demande d'Antho, exception ponctuelle ; le créneau habituel reste samedi 12h). Prochain thème en réserve : lecteur Blu-ray 4K.
+
+- Hub protégé : `index.html` est l'accueil Radar Steelbook (marqueur `HUB-RADAR`). Aucune tâche ni automatisation ne doit le remplacer par le guide cadeaux, qui vit dans `cadeaux-collectionneurs.html`. Avant toute publication du site : `node scripts/check-site.mjs` doit afficher 0 erreur.

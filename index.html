@@ -1,115 +1,323 @@
 <!doctype html>
 <html lang="fr">
 <head>
+<!-- HUB-RADAR : page d'accueil Radar Steelbook. Ne jamais la remplacer par le guide cadeaux (voir cadeaux-collectionneurs.html). Copie synchronisée : radar-steelbook.html (node scripts/sync-hub.mjs). -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guide cadeaux collectionneurs</title>
-<meta name="description" content="Idées cadeaux de Noël pour collectionneurs et kidultes : cartes Pokémon, Funko Pop, Labubu, LEGO adultes.">
+<title>Radar Steelbook</title>
+<meta name="description" content="Les sorties de steelbooks 4K, par date, et l'alerte précommande par mail.">
+<link rel="canonical" href="https://antho24kb.github.io/RadarSteelbook/">
+<meta property="og:url" content="https://antho24kb.github.io/RadarSteelbook/">
+<meta property="og:title" content="Radar Steelbook">
+<meta property="og:description" content="Les sorties de steelbooks 4K, par date, et l'alerte précommande par mail.">
+<meta name="theme-color" content="#0f1113">
+<link rel="preload" href="fonts/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--bg:#faf7f2;--fg:#1d1b19;--muted:#6b645c;--card:#fff;--accent:#c2410c;--line:#e8e1d6}
-@media (prefers-color-scheme:dark){:root{--bg:#171513;--fg:#f2ede6;--muted:#a79e92;--card:#221f1c;--accent:#fb923c;--line:#37322d}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 Georgia,"Times New Roman",serif}
-main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:2rem;line-height:1.15;margin:0 0 8px}
-.lead{color:var(--muted);margin:0 0 20px}
-.notice{font:14px/1.45 system-ui,sans-serif;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 28px;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 16px}
-.card h2{font-size:1.25rem;margin:0 0 6px}
-.card p{margin:0 0 12px}
-.tag{font:12px system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
-.btn{display:inline-block;font:600 15px system-ui,sans-serif;background:var(--accent);color:#fff;text-decoration:none;padding:10px 16px;border-radius:999px}
-.btn+.btn{margin-left:8px;background:transparent;color:var(--accent);border:1px solid var(--accent)}
-footer{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+  @font-face{font-family:"Archivo Black";src:url(fonts/archivo-black-latin-400-normal.woff2) format("woff2");font-display:swap}
+  @font-face{font-family:"Archivo";font-weight:500;src:url(fonts/archivo-latin-500-normal.woff2) format("woff2");font-display:swap}
+  @font-face{font-family:"Archivo";font-weight:700;src:url(fonts/archivo-latin-700-normal.woff2) format("woff2");font-display:swap}
+  @font-face{font-family:"IBM Plex Mono";font-weight:400;src:url(fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2");font-display:swap}
+  @font-face{font-family:"IBM Plex Mono";font-weight:600;src:url(fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");font-display:swap}
+  :root{--acier:#d3d8dc;--papier:#eceff1;--encre:#0f1113;--bleu:#1448c8;--orange:#ff4b1f;--gris:#4b5359;--noir:"Archivo Black","Arial Black",Impact,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html{background:var(--acier)}
+  body{margin:0;color:var(--encre);font-family:Archivo,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-weight:500;line-height:1.45;background:var(--acier);counter-reset:sec}
+  .bandeau{background:var(--encre);color:#fff;display:flex;justify-content:space-between;gap:12px;padding:9px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+  .menu{display:flex;gap:18px;align-items:center;padding:11px 16px;border-bottom:2px solid var(--encre);font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+  .menu a{color:var(--encre);text-decoration:none}.menu .ext{margin-left:auto;background:var(--encre);color:#fff;padding:6px 9px}
+  html{scroll-behavior:smooth}
+  .bandeau b{font-family:var(--noir);font-weight:400;letter-spacing:.02em}
+  .bandeau span:last-child{color:#9aa4ad}
+  header,main{max-width:640px;margin:0 auto;padding-left:16px;padding-right:16px}
+  header{padding-top:30px;padding-bottom:6px}
+  h1{margin:0;font-family:var(--noir);font-weight:400;font-size:clamp(40px,13vw,88px);line-height:.88;letter-spacing:-.025em;text-transform:uppercase}
+  header p{margin:16px 0 0;font-size:17px;max-width:30em}
+  .chiffres{margin:16px 0 0;padding:10px 0;border-top:2px solid var(--encre);border-bottom:2px solid var(--encre);display:flex;flex-wrap:wrap;gap:6px 22px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+  .chiffres b{font-weight:600;color:var(--bleu)}
+  .titre-section{display:flex;align-items:baseline;gap:10px;margin:34px 0 12px;padding-top:8px;border-top:4px solid var(--encre);font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+  .titre-section::before{counter-increment:sec;content:"0" counter(sec);color:var(--bleu)}
+  a.bouton,button.bouton{display:inline-block;background:var(--encre);color:#fff;text-decoration:none;border:0;border-radius:0;padding:11px 15px;font-family:Archivo,Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;cursor:pointer}
+  a.bouton::after,button.bouton::after{content:" \2192"}
+  a.bouton:active,button.bouton:active{background:var(--bleu)}
+  .une{position:relative;background:var(--papier);border:2px solid var(--encre);padding:14px 14px 0}
+  .une::before{content:"NOUVEAU";position:absolute;top:-13px;right:12px;transform:rotate(-4deg);background:var(--orange);color:var(--encre);border:2px solid var(--encre);padding:2px 9px;font-family:var(--noir);font-size:13px;letter-spacing:.04em}
+  .une .label{display:none}
+  .une .al{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid rgba(15,17,19,.28)}
+  .une .al:first-of-type{border-top:0}
+  .une .al img{flex:none;width:60px;height:auto;background:var(--acier);padding:4px;border:1px solid var(--encre)}
+  .une .al .txt{flex:1;min-width:0}
+  .une .titre{font-family:var(--noir);font-weight:400;font-size:17px;line-height:1.15;text-transform:uppercase}
+  .une .date{margin-top:3px;font-family:var(--mono);font-size:12px;color:var(--gris)}
+  .une a.bouton{margin-top:9px}
+  .mail,.pdf{background:var(--papier);border:2px solid var(--encre);padding:14px}
+  .mail{box-shadow:5px 5px 0 var(--encre)}
+  .mail-tete{display:flex;align-items:center;gap:14px}
+  .mail-tete .txt{flex:1;min-width:0}
+  .mail h2,.pdf h2{margin:0;font-family:var(--noir);font-weight:400;font-size:18px;line-height:1.15;text-transform:uppercase}
+  .mail p.sous,.pdf p{margin:5px 0 0;font-family:var(--mono);font-size:12px;color:var(--gris)}
+  #form-mail{margin-top:12px}
+  .fermer{display:block;margin:0 0 8px auto;font:inherit;font-family:var(--mono);font-size:12px;font-weight:600;text-transform:uppercase;color:var(--encre);background:none;border:0;border-bottom:2px solid var(--encre);padding:2px 0;cursor:pointer}
+  .pdf{display:flex;align-items:center;gap:14px;border-style:dashed}
+  .pdf .ico{flex:none;width:62px;height:62px;background:var(--encre);color:#fff;font-family:var(--noir);font-size:26px;line-height:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .pdf .ico small{font-family:var(--mono);font-size:9px;letter-spacing:.14em;margin-top:4px;color:#9aa4ad}
+  .pdf .txt{flex:1;min-width:0}
+  .pdf a.bouton{margin-top:10px}
+  .pdf .pdf-lien{display:block;margin-top:9px;font-family:var(--mono);font-size:11px;color:var(--gris);text-decoration:underline}
+  .filtres{display:flex;margin:0 0 18px}
+  .filtres button{flex:1;font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--encre);background:transparent;border:2px solid var(--encre);border-radius:0;padding:11px 8px;cursor:pointer}
+  .filtres button+button{border-left:0}
+  .filtres button.on{background:var(--encre);color:#fff}
+  .mois-bloc{margin:0 0 6px}
+  .mois-bloc summary{list-style:none;display:flex;align-items:baseline;gap:10px;cursor:pointer;padding:10px 0;border-top:3px solid var(--encre)}
+  .mois-bloc summary::-webkit-details-marker{display:none}
+  .mois-bloc summary .nom{flex:1;font-family:var(--noir);font-size:22px;line-height:1;text-transform:uppercase}
+  .mois-bloc summary .nb{font-family:var(--mono);font-size:11px;color:var(--gris);text-transform:uppercase}
+  .mois-bloc summary::after{content:"+";font-family:var(--mono);font-weight:600;font-size:22px;line-height:1;width:20px;text-align:center}
+  .mois-bloc[open] summary::after{content:"\2212"}
+  .sb{display:flex;align-items:center;gap:14px;padding:11px 0;border-top:1px solid rgba(15,17,19,.28)}
+  .sb .jour{flex:none;width:46px}
+  .sb .jour b{display:block;font-family:var(--noir);font-weight:400;font-size:28px;line-height:.95}
+  .sb .jour span{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--gris)}
+  .sb .txt{flex:1;min-width:0}
+  .sb .titre{font-weight:700;font-size:15px;line-height:1.25}
+  .sb .date{display:none}
+  .sb a.bouton{padding:9px 11px;font-size:12px}
+  .sb.passe .titre,.sb.passe .jour b{color:var(--gris)}
+  .dispo{flex:none;font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--bleu);border:2px solid var(--bleu);padding:6px 9px;white-space:nowrap}
+  .dispo::before{content:"\2713 "}
+  a.dispo{text-decoration:none;cursor:pointer;text-align:center;line-height:1.25;max-width:122px;white-space:normal}
+  .vide{font-family:var(--mono);font-size:13px;padding:18px 0}
+  .vide{border:2px dashed var(--encre);padding:16px 14px;font-family:var(--mono);font-size:12px;color:var(--gris)}
+  footer{max-width:640px;margin:34px auto 0;padding:14px 16px 46px;border-top:4px solid var(--encre);font-family:var(--mono);font-size:11px;color:var(--gris);line-height:1.6}
+  @media(max-width:380px){.une .al img{width:50px}.sb a.bouton{padding:8px 9px}}
 </style>
+<link rel="alternate" type="application/rss+xml" title="Alertes steelbook" href="feed.xml">
 <script data-goatcounter="https://radarsteelbook.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F6GG3ZWCWC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-F6GG3ZWCWC");
+</script>
 </head>
 <body>
+<div class="bandeau"><span><b>4K ULTRA HD</b> + BLU-RAY</span><span>Sorties France</span></div>
+<nav class="menu" aria-label="Menu"><a href="#calendrier">Calendrier</a><a href="#bons-plans-titre">Bons plans</a><a class="ext" href="https://monbonecran.fr/" target="_blank" rel="noopener">Mon Bon Écran ↗</a></nav>
+<header>
+  <h1>Radar<br>Steelbook</h1>
+  <p>Toutes les sorties de steelbooks 4K, classées par date. Un seul mail par jour quand une précommande s'ouvre.</p>
+  <div class="chiffres"><span><b id="nb">·</b> sorties à venir</span><span>Mail récap : 19h</span></div>
+</header>
 <main>
-<h1>Guide cadeaux collectionneurs</h1>
-<p class="lead">Plus que quelques semaines avant Noël : des idées de cadeaux pour les cinéphiles et les fans de cartes, de figurines et de jouets de collection, adultes compris. Pensez à commander tôt pour les éditions limitées.</p>
-<p class="notice"><strong>Lien affilié Amazon.</strong> En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Cela ne change pas le prix pour vous.</p>
 
-<section class="card">
-<div class="tag">Nouveauté de la semaine</div>
-<h2>Cartes Pokémon : deux sorties le 6 novembre</h2>
-<p>Pokémon fête ses 30 ans, et le 6 novembre arrivent l'extension Règne Delta et les coffrets Ultra Premium 30th Celebration, en deux versions : Espeon ex (jour) et Umbreon ex (nuit). Mini-boîtes, decks de combat et classeurs anniversaire restent de bonnes idées pour un petit budget. Les stocks varient vite : vérifiez la disponibilité avant de commander.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=pokemon+ultra+premium+collection+30th+celebration&tag=antho24kb-21" rel="sponsored nofollow noopener">Coffrets Ultra Premium</a>
-<a class="btn" href="https://www.amazon.fr/s?k=coffret+cartes+pokemon+30+ans&tag=antho24kb-21" rel="sponsored nofollow noopener">Coffrets 30 ans</a>
-<a class="btn" href="https://www.amazon.fr/s?k=booster+pokemon&tag=antho24kb-21" rel="sponsored nofollow noopener">Boosters</a>
-</section>
+  <div class="titre-section">Précommandes ouvertes</div>
+  <!-- ALERTE-UNE : bloc géré à la main par Antho/Claude (alertes précommande). Ne JAMAIS supprimer ni modifier par la mise à jour automatique. Max 4 items, le plus récent en haut. Un item = <div class="al"> avec <img src="alertes/thumb-XXX.webp"> optionnel + <div class="txt"> (titre, date, bouton). -->
+  <div class="une">
+    <div class="al">
+      <img src="alertes/thumb-orange-mecanique.webp" alt="" loading="lazy">
+      <div class="txt">
+        <div class="titre">Orange Mécanique, Titans of Cult (steelbook 4K) : retour en stock</div>
+        <div class="date">De nouveau disponible</div>
+        <a class="bouton" href="https://www.amazon.fr/dp/B09BC7731Q/ref=cm_sw_r_as_gl_api_gl_i_G3AAB353H2YJFE359X6J?linkCode=ml1&amp;tag=antho24kb-21&amp;linkId=c542cba2a73094700c28bb807e0097c4&amp;gaOptInStatus=true" rel="sponsored nofollow noopener">Voir sur Amazon</a>
+      </div>
+    </div>
+    <div class="al">
+      <img src="alertes/thumb-leprechaun-1-2.webp" alt="" loading="lazy">
+      <div class="txt">
+        <div class="titre">Leprechaun 1 &amp; 2 (steelbook 4K) : précommande ouverte</div>
+        <div class="date">Sortie le 24 février 2027</div>
+        <a class="bouton" href="https://www.amazon.fr/dp/B0HQKD2QWH/ref=cm_sw_r_as_gl_api_gl_i_DDYPXB7J9N4KHFFM332Y?linkCode=ml1&amp;tag=antho24kb-21&amp;linkId=a1143863ae6bc39e1e0ba6c23c0b1f87&amp;gaOptInStatus=true" rel="sponsored nofollow noopener">Voir sur Amazon</a>
+      </div>
+    </div>
+    <div class="al">
+      <img src="alertes/thumb-the-odyssey.webp" alt="" loading="lazy">
+      <div class="txt">
+        <div class="titre">The Odyssey (steelbook 4K) : retour en stock</div>
+        <div class="date">Disponible le 18 novembre 2026</div>
+        <a class="bouton" href="https://www.amazon.fr/dp/B0HMY41Z9K/ref=cm_sw_r_as_gl_api_gl_i_5V21TSHX41F2T31NQMTF?linkCode=ml1&amp;tag=antho24kb-21&amp;linkId=985647bc799a2a547b2d28c070dd6f83&amp;gaOptInStatus=true" rel="sponsored nofollow noopener">Voir sur Amazon</a>
+      </div>
+    </div>
+    <div class="al">
+      <img src="alertes/thumb-house-of-the-dragon-s3.webp" alt="" loading="lazy">
+      <div class="txt">
+        <div class="titre">House of the Dragon : Saison 3 (steelbook 4K)</div>
+        <div class="date">Sortie le 2 décembre 2026</div>
+        <a class="bouton" href="https://www.amazon.fr/dp/B0HDQZXGJ1?tag=antho24kb-21" rel="sponsored nofollow noopener">Voir sur Amazon</a>
+      </div>
+    </div>
+  </div>
+  <!-- /ALERTE-UNE -->
 
-<section class="card">
-<div class="tag">Cadeaux cinéphile</div>
-<h2>L'Odyssée de Nolan en steelbook 4K</h2>
-<p>Le film de Christopher Nolan sort en steelbook 4K le 18 novembre 2026. Il est déjà en précommande : le cadeau tout trouvé pour un fan de cinéma. Les stocks des éditions limitées partent vite.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=3701432072890&tag=antho24kb-21" rel="sponsored nofollow noopener">Précommander le steelbook</a>
-</section>
+  <div class="titre-section" id="bons-plans-titre">Bons plans du Daron</div>
+  <div id="bons-plans"></div>
 
-<section class="card">
-<div class="tag">Sets LEGO</div>
-<h2>LEGO Pokémon : la Poké Ball et Red en grand format</h2>
-<p>Deux sets LEGO Pokémon sont sortis le 1er octobre : une Poké Ball géante avec trois minifigurines de dresseurs, et une grande minifigurine de Red. Un cadeau de Noël de choix pour un fan de la première heure.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=lego+pokemon+poke+ball&tag=antho24kb-21" rel="sponsored nofollow noopener">Voir les sets Pokémon</a>
-</section>
+  <div class="titre-section">Alerte par mail</div>
+  <section class="mail alertes">
+    <div class="mail-tete">
+      <div class="txt">
+        <h2>Ne rate plus aucune précommande</h2>
+        <p class="sous">Un seul mail par jour à 19h. Pas de spam.</p>
+      </div>
+      <button type="button" class="bouton" id="ouvrir-mail" data-goatcounter-click="ouvrir-formulaire-mail" data-goatcounter-title="Ouvrir le formulaire mail">Je m'inscris</button>
+    </div>
+    <div id="form-mail" hidden>
+      <button type="button" class="fermer" id="fermer-mail" aria-label="Fermer le formulaire">Fermer ✕</button>
+      <iframe width="540" height="620" src="https://9158ec83.sibforms.com/v2/serve/MUIFAHd_Pk6CYkitmG2by5JsGAX_0h4N7ZXpTpwc_811hQqPBlmaREkqZTfI3GX3WssUDNS8qx5RWtOLVXAUDL3EazOBmNRvYNXHjc_vgvu9K88IEWpQkBTpVZjNoCqY95K4H0JItbeHBVe6XFlu5VJLwJzZ8SoLJusC4ay3NBLYjQsmt4OUqHbLCs8d4BHGYOX8S-4UsbHbRiPFlQ==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0 auto;max-width:100%;border:0;background:#fff"></iframe>
+    </div>
+  </section>
 
-<section class="card">
-<div class="tag">Figurines</div>
-<h2>Funko Pop! : la collection Pokémon 30 ans</h2>
-<p>Funko célèbre les 30 ans de Pokémon avec une ligne Funko Pop! Premium dédiée, à côté des classiques films, séries, jeux vidéo et sport. Un cadeau simple à choisir, pour tous les budgets : vérifiez la disponibilité de chaque modèle avant de commander.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=funko+pop+pokemon&tag=antho24kb-21" rel="sponsored nofollow noopener">Funko Pokémon</a>
-<a class="btn" href="https://www.amazon.fr/s?k=funko+pop&tag=antho24kb-21" rel="sponsored nofollow noopener">Toutes les figurines</a>
-</section>
+  <div class="titre-section">Cadeau gratuit</div>
+  <section class="pdf">
+    <div class="ico">100<small>FILMS</small></div>
+    <div class="txt">
+      <h2>100 films à voir : la liste gratuite</h2>
+      <p>Coche chaque film vu, ton score s'affiche en direct.</p>
+      <a class="bouton" href="liste.html" data-goatcounter-click="ouvrir-liste-100-films-radar" data-goatcounter-title="Ouvrir la liste 100 films (page radar)">Ouvrir la liste</a>
+      <a class="pdf-lien" href="100-films-cultes-a-cocher.pdf" download data-goatcounter-click="telechargement-pdf-100-films-radar" data-goatcounter-title="Telechargement PDF 100 films (page radar)">ou télécharger le PDF à imprimer</a>
+    </div>
+  </section>
 
-<section class="card">
-<div class="tag">Autres jeux de cartes</div>
-<h2>One Piece et Riftbound : les TCG qui montent</h2>
-<p>Pokémon n'est pas le seul jeu de cartes à collectionner : One Piece Card Game et Riftbound (l'univers de League of Legends) ont aussi leurs nouveautés en ce mois de novembre. Boosters, decks de démarrage et classeurs font de bons cadeaux pour un joueur ou un collectionneur. Vérifiez la disponibilité avant de commander.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=one+piece+card+game+booster&tag=antho24kb-21" rel="sponsored nofollow noopener">One Piece</a>
-<a class="btn" href="https://www.amazon.fr/s?k=riftbound+league+of+legends+tcg&tag=antho24kb-21" rel="sponsored nofollow noopener">Riftbound</a>
-</section>
+  <div class="titre-section" id="calendrier">Calendrier des sorties</div>
+  <div class="filtres" role="group" aria-label="Filtrer le calendrier">
+    <button type="button" class="on" data-f="avenir">À venir</button>
+    <button type="button" data-f="dispo">Disponibles</button>
+  </div>
+  <div id="liste"></div>
 
-<section class="card">
-<div class="tag">Kidultes</div>
-<h2>LEGO pour adultes</h2>
-<p>Les adultes qui s'offrent des jouets font grossir le marché. Les nouveautés d'octobre misent sur les licences cultes : Star Wars, PlayStation, Wallace &amp; Gromit ou Icons. Parfait pour un cadeau de Noël de kidulte.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=lego+adultes&tag=antho24kb-21" rel="sponsored nofollow noopener">Voir les sets</a>
-<a class="btn" href="https://www.amazon.fr/s?k=lego+star+wars+adultes&tag=antho24kb-21" rel="sponsored nofollow noopener">Star Wars</a>
-</section>
-
-<section class="card">
-<div class="tag">Peluches</div>
-<h2>Labubu et peluches Pop Mart</h2>
-<p>Phénomène de 2025, Labubu reste une valeur sûre pour les fans de figurines à collectionner : Pop Mart a ouvert une douzaine de boutiques en France. Attention aux contrefaçons : choisissez un vendeur fiable.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=labubu+pop+mart&tag=antho24kb-21" rel="sponsored nofollow noopener">Voir les peluches</a>
-</section>
-
-<section class="card">
-<div class="tag">Cadeaux cinéphile</div>
-<h2>Steelbooks et Blu-ray 4K</h2>
-<p>Un steelbook, c'est un boîtier en métal illustré qui se range comme un objet de collection. Idéal pour un fan de film culte, avec une belle image 4K à la clé.</p>
-<a class="btn" href="https://www.amazon.fr/s?k=steelbook+4k&tag=antho24kb-21" rel="sponsored nofollow noopener">Voir les steelbooks</a>
-<a class="btn" href="https://www.amazon.fr/s?k=coffret+saga+blu-ray+4k&tag=antho24kb-21" rel="sponsored nofollow noopener">Coffrets de sagas</a>
-</section>
-
-<section class="card">
-<div class="tag">Pour les curieux</div>
-<h2>Livres de psychologie et carnets</h2>
-<p>Un cadeau pour quelqu'un qui aime comprendre comment fonctionne le cerveau : livres accessibles, carnets, outils pour mieux s'organiser.</p>
-<a class="btn" href="psycho.html">Voir la sélection</a>
-</section>
-
-<section class="card">
-<div class="tag">Cinéphiles</div>
-<h2>Steelbooks 4K de novembre</h2>
-<p>Les sorties steelbook de novembre 2026 en France : L'Odyssée, Rocky, Hook, Kill Bill et 20 autres.</p>
-<a class="btn" href="steelbook.html">Voir les sorties</a>
-</section>
-
-<footer>
-<p>Les prix et la disponibilité changent. Consultez la page Amazon pour le prix actuel au moment de l'achat.</p>
-<p>En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</p>
-</footer>
 </main>
+<footer>
+  <p><a href="steelbook.html" style="color:inherit">Liste simple des sorties</a> · <a href="cadeaux-collectionneurs.html" style="color:inherit">Idées cadeaux collectionneurs</a></p>
+  En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Les prix et la disponibilité sont ceux affichés sur Amazon. Les liens des bons plans sont des liens affiliés.
+</footer>
+
+<script>
+/* Pour ajouter un steelbook : copie une ligne, change la date (AAAA-MM-JJ), le titre et le lien Amazon (avec ton tag). */
+let STEELBOOKS = [];
+
+const liste = document.getElementById("liste");
+const aujourdhui = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris" }).format(new Date());
+const moisActuel = aujourdhui.slice(0, 7);
+/* Filtres : "avenir" = mois en cours (sorties + disponibles du mois) puis mois futurs repliés ; "dispo" = tous les disponibles, tous mois (mois en cours ouvert, les autres repliés). */
+function carte(s, aujourdhui) {
+  const d = new Date(s.date + "T12:00:00");
+  const jour = d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
+  const el = document.createElement("div");
+  el.className = "sb";
+  el.innerHTML = '<div class="jour"><b></b><span></span></div>' +
+                 '<div class="txt"><div class="titre"></div><div class="date"></div></div>' +
+                 '<a class="bouton" target="_blank" rel="noopener sponsored">Amazon</a>';
+  el.querySelector(".jour b").textContent = d.getDate();
+  el.querySelector(".jour span").textContent = d.toLocaleDateString("fr-FR", { month: "short" }).replace(".", "");
+  el.querySelector(".date").textContent = jour;
+  el.querySelector(".titre").textContent = s.titre;
+  if (s.date <= aujourdhui) {
+    el.classList.add("passe");
+    const a = el.querySelector("a");
+    a.className = "dispo";
+    a.textContent = "Disponible sur Amazon";
+  }
+  el.querySelector("a").href = s.lien;
+  return el;
+}
+function afficher(mode) {
+  liste.innerHTML = "";
+  let items = [...STEELBOOKS];
+  if (mode === "avenir") items = items.filter(s => s.date > aujourdhui || s.date.slice(0, 7) === moisActuel);
+  if (mode === "dispo") items = items.filter(s => s.date <= aujourdhui);
+  items.sort((a, b) => mode === "dispo" ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date));
+  if (!items.length) {
+    liste.innerHTML = '<p class="vide">' + (mode === "dispo" ? "Aucun steelbook disponible pour le moment." : "Les prochaines sorties arrivent très bientôt.") + '</p>';
+    return;
+  }
+  const groupes = [];
+  items.forEach(s => {
+    const cle = s.date.slice(0, 7);
+    let g = groupes[groupes.length - 1];
+    if (!g || g.cle !== cle) { g = { cle, items: [] }; groupes.push(g); }
+    g.items.push(s);
+  });
+  groupes.forEach(g => {
+    const d = new Date(g.cle + "-15T12:00:00");
+    const nom = d.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
+    const det = document.createElement("details");
+    det.className = "mois-bloc";
+    det.open = g.cle === moisActuel;
+    const sum = document.createElement("summary");
+    sum.innerHTML = '<span class="nom"></span><span class="nb"></span>';
+    sum.querySelector(".nom").textContent = nom;
+    sum.querySelector(".nb").textContent = g.items.length + (g.items.length > 1 ? " sorties" : " sortie");
+    det.appendChild(sum);
+    g.items.forEach(s => det.appendChild(carte(s, aujourdhui)));
+    liste.appendChild(det);
+  });
+}
+async function chargerSteelbooks() {
+  liste.innerHTML = '<p class="vide">Chargement du calendrier…</p>';
+  try {
+    const reponse = await fetch("data/steelbooks.json");
+    if (!reponse.ok) throw new Error("Chargement impossible : " + reponse.status);
+    const donnees = await reponse.json();
+    if (!Array.isArray(donnees)) throw new Error("Le catalogue doit être une liste.");
+    STEELBOOKS = donnees;
+    document.getElementById("nb").textContent = STEELBOOKS.filter(s => s.date > aujourdhui).length;
+    afficher("avenir");
+  } catch (erreur) {
+    console.error("Impossible de charger le catalogue des steelbooks.", erreur);
+    document.getElementById("nb").textContent = "·";
+    liste.innerHTML = '<p class="vide">Le calendrier est momentanément indisponible.</p>';
+  }
+}
+
+const boutonMail = document.getElementById("ouvrir-mail");
+const formMail = document.getElementById("form-mail");
+boutonMail.addEventListener("click", () => {
+  formMail.hidden = false;
+  boutonMail.hidden = true;
+});
+document.getElementById("fermer-mail").addEventListener("click", () => {
+  formMail.hidden = true;
+  boutonMail.hidden = false;
+  boutonMail.closest(".mail").scrollIntoView({ block: "center" });
+});
+document.querySelectorAll(".filtres button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filtres button").forEach(x => x.classList.toggle("on", x === btn));
+    afficher(btn.dataset.f);
+  });
+});
+document.addEventListener("click", (event) => {
+  const lien = event.target.closest("a[href]");
+  if (!lien || typeof gtag !== "function") return;
+  const url = lien.href;
+  if (!url.includes("amazon.") && !url.includes("link.amazon/") && !url.includes("amzn.eu/")) return;
+  gtag("event", "amazon_click", {
+    link_url: url,
+    link_text: lien.textContent.trim(),
+    page_location: window.location.href
+  });
+});
+
+chargerSteelbooks();
+</script>
+<script>
+/* BONS PLANS DU DARON : pour en ajouter un, copie une ligne en haut (le plus récent d'abord). Date AAAA-MM-JJ, titre, lien Amazon avec le tag antho24kb-21. */
+const BONS_PLANS = [
+  {date:"2026-11-13",titre:"Câble HDMI 2.1 fibre optique 8K (10 m)",lien:"https://www.amazon.fr/dp/B0HGXK3JSC/ref=cm_sw_r_as_gl_api_gl_i_D5D72N2QRGKA8JYSHCPV?linkCode=ml1&tag=antho24kb-21&linkId=6c819807a8ad048628a9478ce575b01b&gaOptInStatus=true"},
+  {date:"2026-11-10",titre:"Machine à pop-corn",lien:"https://www.amazon.fr/dp/B0D47X76VC/ref=cm_sw_r_as_gl_api_gl_i_XPBF3QF9RQGM9TBPXFQK?linkCode=ml1&tag=antho24kb-21&linkId=815a611be91badcdb22dd7c36486b05a&gaOptInStatus=true"},
+  {date:"2026-11-09",titre:"The Art of Cinematic Storytelling",lien:"https://www.amazon.fr/dp/0190054336/ref=cm_sw_r_as_gl_api_gl_i_26T4R6NGX3VS0NRKKPS5?linkCode=ml1&tag=antho24kb-21&linkId=22715e7d7ecf73a08754c076ff460906&gaOptInStatus=true"}
+];
+(function(){
+  const L=document.getElementById("bons-plans");
+  if(!BONS_PLANS.length){const d=document.createElement("div");d.className="vide";d.textContent="Les premiers bons plans arrivent très vite.";L.appendChild(d);return}
+  BONS_PLANS.forEach(p=>{const d=new Date(p.date+"T12:00:00");
+    const el=document.createElement("div");el.className="sb";
+    const j=document.createElement("div");j.className="jour";const b=document.createElement("b");b.textContent=d.getDate();const sp=document.createElement("span");sp.textContent=d.toLocaleDateString("fr-FR",{month:"short"}).replace(".","");j.append(b,sp);
+    const t=document.createElement("div");t.className="txt";const ti=document.createElement("div");ti.className="titre";ti.textContent=p.titre;t.appendChild(ti);
+    const a=document.createElement("a");a.className="bouton";a.href=p.lien;a.rel="sponsored nofollow noopener";a.textContent="Voir";
+    el.append(j,t,a);L.appendChild(el)});
+})();
+</script>
 </body>
 </html>
