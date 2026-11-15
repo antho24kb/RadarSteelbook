@@ -200,7 +200,7 @@ let STEELBOOKS = [];
 const liste = document.getElementById("liste");
 const aujourdhui = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris" }).format(new Date());
 const moisActuel = aujourdhui.slice(0, 7);
-/* Filtres : "avenir" = mois en cours (sorties + disponibles du mois) puis mois futurs repliés ; "dispo" = tous les disponibles, tous mois (mois en cours ouvert, les autres repliés). */
+/* Filtres : "avenir" = sorties à venir uniquement (date après aujourd'hui ; dès que la date est atteinte, le steelbook passe dans Disponibles) ; "dispo" = tous les disponibles, tous mois (mois en cours ouvert, les autres repliés). */
 function carte(s, aujourdhui) {
   const d = new Date(s.date + "T12:00:00");
   const jour = d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
@@ -225,7 +225,7 @@ function carte(s, aujourdhui) {
 function afficher(mode) {
   liste.innerHTML = "";
   let items = [...STEELBOOKS];
-  if (mode === "avenir") items = items.filter(s => s.date > aujourdhui || s.date.slice(0, 7) === moisActuel);
+  if (mode === "avenir") items = items.filter(s => s.date > aujourdhui);
   if (mode === "dispo") items = items.filter(s => s.date <= aujourdhui);
   items.sort((a, b) => mode === "dispo" ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date));
   if (!items.length) {
