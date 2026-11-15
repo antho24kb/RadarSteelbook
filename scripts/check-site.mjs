@@ -1,9 +1,20 @@
-// Depuis la racine du dépôt : node scripts/check-site.mjs   (code de sortie 1 si une règle est violée)
+// Depuis la racine du dépôt : node scripts/check-site.mjs [--base=<référence git>]   (code de sortie 1 si une règle est violée)
+// Les contrôles fonctionnels (canonical, hub, GA4, Brevo, liens, affiliation, prix, catalogue) ne dépendent d'aucune référence.
+// Avec --base=<référence> (branche, tag ou SHA ; ou variable CHECK_BASE), on ajoute les contrôles de comparaison :
+// le hub et le guide sont comparés aux pages de cette version, et les fichiers protégés doivent être inchangés depuis elle.
+// Sans --base, ces contrôles de comparaison sont simplement ignorés (ils n'ont de sens que pour une migration).
 import { readFile, access } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 const BASE = "https://antho24kb.github.io/RadarSteelbook/";
 const read = (p) => readFile(new URL("../" + p, import.meta.url), "utf8");
 const errors = []; const ok = [];
+const arg = process.argv.slice(2).find((a) => a.startsWith("--base=")) ?? (process.argv.includes("--base") ? "--base=" + process.argv[process.argv.indexOf("--base") + 1] : null);
+const BASE_REF = arg ? arg.slice(7) : (process.env.CHECK_BASE || null);
+if (BASE_REF) {
+  try { execFileSync("git", ["rev-parse", "--verify", "--quiet", BASE_REF + "^{commit}"], { stdio: "ignore" }); }
+  catch { console.error(`Erreur : la référence « ${BASE_REF} » n'existe pas (branche, tag ou SHA attendu).`); process.exit(2); }
+}
+const baseFile = (p) => execFileSync("git", ["show", `${BASE_REF}:${p}`], { encoding: "utf8" });
 const check = (cond, msg) => (cond ? ok.push(msg) : errors.push(msg));
 const pages = ["index.html", "radar-steelbook.html", "cadeaux-collectionneurs.html", "steelbook.html", "psycho.html", "liste.html", "merci-liste.html", "p/index.html", "s/index.html"];
 const html = {}; for (const p of pages) html[p] = await read(p);
@@ -23,19 +34,21 @@ check(canon("p/index.html") === BASE + "psycho.html" && canon("s/index.html") ==
 for (const p of ["index.html", "cadeaux-collectionneurs.html"]) check((html[p].match(/rel="canonical"/g) || []).length === 1, p + " : une seule canonical");
 
 // 3. Fonctions du hub conservées (comparées à la version actuellement publiée)
-const prev = execFileSync("git", ["show", "HEAD:radar-steelbook.html"], { encoding: "utf8" });
 for (const [label, re] of [
   ["GA4 (G-F6GG3ZWCWC)", /gtag\("config", "G-F6GG3ZWCWC"\)/], ["GoatCounter", /data-goatcounter=/], ["suivi amazon_click", /gtag\("event", "amazon_click"/],
   ["formulaire mail Brevo", /sibforms\.com/], ["flux RSS", /type="application\/rss\+xml"/], ["filtres du calendrier", /data-f="avenir"[\s\S]*data-f="dispo"/],
   ["chargement data/steelbooks.json", /fetch\("data\/steelbooks\.json"\)/], ["bloc ALERTE-UNE", /<!-- ALERTE-UNE/], ["bons plans", /const BONS_PLANS/],
 ]) check(re.test(hub), "hub : " + label);
 const strip = (s) => s.replace(/<!-- HUB-RADAR[^>]*-->\n?/, "").replace(/<link rel="canonical"[^>]*>\n?/, "").replace(/<meta property="og:url"[^>]*>\n?/, "").replace(/ *<p><a href="steelbook\.html" style="color:inherit">[^\n]*<\/p>\n/, "");
-check(strip(hub) === prev, "hub : aucune autre différence avec l'ancienne radar-steelbook.html (contenu, alertes, scripts)");
+if (BASE_REF) check(strip(hub) === baseFile("radar-steelbook.html"), `hub : aucune autre différence avec radar-steelbook.html de ${BASE_REF} (contenu, alertes, scripts)`);
 
 // 4. Guide cadeaux conservé
-const oldGuide = execFileSync("git", ["show", "HEAD:index.html"], { encoding: "utf8" });
-const g = html["cadeaux-collectionneurs.html"].replace(/<link rel="canonical"[^>]*>\n?/, "").replace('<p><a href="index.html">← Radar Steelbook</a></p>\n', "");
-check(g === oldGuide, "cadeaux-collectionneurs.html : contenu identique à l'ancien guide (+ canonical et lien retour)");
+const guide = html["cadeaux-collectionneurs.html"];
+check(/<title>Guide cadeaux collectionneurs<\/title>/.test(guide) && /<h1>Guide cadeaux collectionneurs<\/h1>/.test(guide) && guide.includes('href="index.html">← Radar Steelbook</a>'), "cadeaux-collectionneurs.html : c'est bien le guide cadeaux, avec son lien retour vers le hub");
+if (BASE_REF) {
+  const g = guide.replace(/<link rel="canonical"[^>]*>\n?/, "").replace('<p><a href="index.html">← Radar Steelbook</a></p>\n', "");
+  check(g === baseFile("index.html"), `cadeaux-collectionneurs.html : contenu identique à index.html de ${BASE_REF} (+ canonical et lien retour)`);
+}
 
 // 5. Liens locaux
 let broken = 0;
@@ -65,8 +78,11 @@ for (const p of ["index.html", "cadeaux-collectionneurs.html"]) check(!price.tes
 
 // 7. Catalogue et flux inchangés
 try { execFileSync("node", ["scripts/validate-steelbooks.mjs"], { encoding: "utf8" }); ok.push("catalogue data/steelbooks.json : validateur OK"); } catch (e) { errors.push("validate-steelbooks : " + (e.stdout || e.message)); }
-const feedChanged = execFileSync("git", ["diff", "--name-only", "HEAD", "--", "feed.xml", "data/steelbooks.json", "alertes", ".github"], { encoding: "utf8" }).trim();
-check(feedChanged === "", "feed.xml, data/, alertes/, .github/ : non modifiés");
+if (BASE_REF) {
+  const feedChanged = execFileSync("git", ["diff", "--name-only", BASE_REF, "--", "feed.xml", "data/steelbooks.json", "alertes", ".github"], { encoding: "utf8" }).trim();
+  check(feedChanged === "", `feed.xml, data/, alertes/, .github/ : non modifiés depuis ${BASE_REF}`);
+}
 
+console.log(BASE_REF ? `Référence de comparaison : ${BASE_REF}` : "Aucune référence de comparaison (--base absent) : contrôles de comparaison ignorés");
 console.log(ok.map((m) => "OK   " + m).join("\n")); if (errors.length) console.log(errors.map((m) => "ERREUR " + m).join("\n"));
 console.log(`\n${ok.length} contrôles OK, ${errors.length} erreur(s)`); process.exit(errors.length ? 1 : 0);
