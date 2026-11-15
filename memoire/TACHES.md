@@ -9,8 +9,8 @@ Format : `- [ ] tâche — responsable — échéance — critère de fin`
 - [ ] Vérifier le lien et la date de Kill Bill — Antho/Claude — sans échéance — lien Amazon et date confirmés
 - [ ] Vérifier que le compteur de visites (GoatCounter) fonctionne — Claude — sans échéance — visites visibles
 - [ ] Harmoniser le design de `steelbook.html` et `liste.html` avec la page radar — Claude — si Antho le demande
-- [ ] Point statistiques TikTok (Metricool) — Claude — chaque lundi — résumé envoyé à Antho
-- [ ] Pack de la semaine — Claude — chaque dimanche — pack envoyé à Antho
+- [ ] Rapport hebdo TikTok + préparation de la semaine — Claude — chaque dimanche 12h — rapport envoyé, contenus créés un par un avec Antho
+- [ ] Relevé stats 24h/7j dans STATS.md — tâche silencieuse — chaque soir 22h47 — lignes ajoutées
 - [x] Déplacer et valider le catalogue Radar — ChatGPT — 6 nov. 2026 — déplacer sans perte le tableau `STEELBOOKS` de `radar-steelbook.html` dans `data/steelbooks.json` et charger ce fichier sur la page ; ajouter un validateur local sans dépendance qui vérifie les dates ISO, les titres non vides, les liens Amazon présents et l’absence de prix ou de doublons, sans ouvrir, tester ni modifier les liens ; préserver `ALERTE-UNE` et toutes les règles de `REGLES.md` ; vérifier l’affichage à 390 px ; une fois terminé, cocher la tâche et ajouter une ligne datée dans `JOURNAL.md`.
 
 ## Terminé

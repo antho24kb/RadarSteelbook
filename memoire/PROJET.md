@@ -23,4 +23,4 @@ Devenir « l'alerteur de steelbook » sur TikTok : prévenir dès qu'un steelboo
 - Les sorties dont la date est passée n'ont plus de lien et affichent « Disponible ».
 
 ## Calendrier de publication TikTok
-1er du mois : sorties du mois · lundi : sorties de la semaine · mardi : un steelbook de sa collection · jour de sortie (souvent mercredi) : un carrousel « sortie du jour » · jeudi : un unboxing · heures : 10h / 12h / 18h. Le 25 de chaque mois : préparer les sorties du mois suivant.
+Voir REGLES.md (« Calendrier TikTok LE DARON » et « Méthode vidéo et règles par format »). Stats : STATS.md.

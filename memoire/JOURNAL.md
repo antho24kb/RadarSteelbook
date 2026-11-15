@@ -16,3 +16,4 @@
 - 2026-11-14 — Antho (correction) : samedi 12h La Question du Daron, samedi 19h Le saviez-vous ?
 - 2026-11-14 — Claude : alerte retour en stock Orange Mécanique Titans of Cult (vidéo + encadré + flux RSS).
 - 2026-11-14 — Antho : rubrique « Le saviez-vous ? » retirée du projet.
+- 2026-11-15 — Antho/Claude : nouvelle méthode vidéo et règles par format, STATS.md créé (bilan 9-15 nov.), rappel du dimanche 12h réécrit (rapport + préparation, décalé au 22 nov.), récap 19h limité à Mon Bon Écran, relevé quotidien silencieux créé.

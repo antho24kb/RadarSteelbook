@@ -28,3 +28,14 @@
 - « Le saviez-vous ? » est supprimé (décision d'Antho, 14 nov. 2026) ; plus de publication le samedi à 19h.
 - La Question du Daron : question forte dès la slide 1, but = commentaires ; charte LE DARON ; format 1080×1440 (TikTok coupe le 1080×1920 en carrousel photo) ; MonBonEcran.fr seulement pour les sujets télé / image ; thèmes en rotation, préparés dans le planning mensuel.
 - Thèmes : télé · lecteur Blu-ray 4K · OLED ou Mini LED · Dolby Vision ou HDR10 · réglages optimisés · système audio · taille d'écran · dans le noir ou avec lumière d'ambiance (Ambilight = Philips uniquement).
+
+## Méthode vidéo et règles par format (15 nov. 2026, validé par Antho)
+- Structure guide (pas une durée imposée) : 0-2 s accroche forte et immédiate · 2-8 s visuels, gros plans, détails des steelbooks · 8-17 s info, comparaison ou avis · 17-23 s question qui appelle les commentaires.
+- Le Duel : éditions visibles dès la 1re seconde, vraie opposition, un argument court par édition, question « laquelle tu défends, et pourquoi ? » (pas un simple vote).
+- Sorties de la semaine / du jour : la sortie la plus forte en 1re slide, visuels et infos soignés, question sur la précommande ou la préférence, pas de simple catalogue.
+- Unboxing : Antho filme ; structure gros plans → ouverture → finitions → détails ; voix facultative.
+- Ma collection : format conservé ; valoriser éditions, coffrets, détails ; meilleur gros plan dans les 2 premières secondes.
+- Bon plan du Daron : produit et intérêt avant le prix ; prix et dispo vérifiés ; lien affilié correct ; Radar Steelbook amené naturellement.
+- Alertes : steelbook visible dès la 1re image.
+- Publication à 19h (exception : La Question du Daron le samedi à 12h). Charte, calendrier et formats inchangés sans validation d'Antho. « Le saviez-vous ? » ne revient pas. Identité steelbook au centre, Radar Steelbook comme destination.
+- Suivi : chaque soir, relevé silencieux des stats à 24h et 7j dans STATS.md ; chaque dimanche 12h, rapport hebdo (meilleures/moins bonnes publications, formats en hausse/baisse, meilleures accroches, rétention, recommandations) avant la préparation de la semaine.
