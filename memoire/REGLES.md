@@ -39,3 +39,5 @@
 - Alertes : steelbook visible dès la 1re image.
 - Publication à 19h (exception : La Question du Daron le samedi à 12h). Charte, calendrier et formats inchangés sans validation d'Antho. « Le saviez-vous ? » ne revient pas. Identité steelbook au centre, Radar Steelbook comme destination.
 - Suivi : chaque soir, relevé silencieux des stats à 24h et 7j dans STATS.md ; chaque dimanche 12h, rapport hebdo (meilleures/moins bonnes publications, formats en hausse/baisse, meilleures accroches, rétention, recommandations) avant la préparation de la semaine.
+
+- Semaine du 16 nov. : La Question du Daron du samedi 21 nov. publiée à 18h (demande d'Antho, exception ponctuelle ; le créneau habituel reste samedi 12h). Prochain thème en réserve : lecteur Blu-ray 4K.
