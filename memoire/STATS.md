@@ -30,3 +30,7 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 ## Relevés (24h / 7j, ajoutés chaque soir par la tâche silencieuse)
 | Date publication | Jalon | Légende | Durée s | Vues | Temps moyen s | Vu en entier % | Com./1000 | Likes | Partages | Favoris | Abonnés |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-08 | 7j | Spider-Man : Brand New Day en steelbook | 20,0 | 585 | 5,06 | 6,6 | 15,4 | 16 | 0 | 2 | 4 |
+| 2026-11-09 | 7j | 🎬 Cette semaine en steelbook ! Le Cercle | 0,0 | 561 | 5,06 | 28,3 | 12,5 | 23 | 0 | 1 | 1 |
+| 2026-11-14 | 24h | 🎬 1 000 abonnés ! Merci à toute la team | 0,0 | 350 | 3,41 | 4,9 | 22,9 | 10 | 0 | 0 | 4 |
+| 2026-11-14 | 24h | 🍊 Orange Mécanique Titans of Cult de ret | 8,0 | 432 | 4,14 | 13,8 | 4,6 | 11 | 0 | 0 | 0 |
