@@ -279,7 +279,8 @@
     "date": "2026-12-31",
     "titre": "Malfaisante (Other Mommy)",
     "lien": "https://www.amazon.fr/dp/B0HN35B7HL/ref=cm_sw_r_as_gl_api_gl_i_8BD5SE8492GF8KW5V55C?linkCode=ml1&tag=antho24kb-21&linkId=87b15542d5de6511478f5b88cf379450&gaOptInStatus=true",
-    "description": "Steelbook 4K + Blu-ray limité, avec Jessica Chastain."
+    "description": "Steelbook 4K + Blu-ray limité, avec Jessica Chastain.",
+    "image": "images/steelbooks/malfaisante-other-mommy.webp"
   },
   {
     "id": "ginger-snaps",
@@ -302,7 +303,8 @@
     "date": "2027-01-27",
     "titre": "Les Ensorceleuses 2",
     "lien": "https://www.amazon.fr/s?k=Les%20Ensorceleuses%202%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/les-ensorceleuses-2.webp"
   },
   {
     "id": "une-journee-en-enfer",
@@ -365,7 +367,8 @@
     "date": "2027-02-24",
     "titre": "Clayface",
     "lien": "https://www.amazon.fr/dp/B0HNPNF6KR?tag=antho24kb-21",
-    "description": "Le film DC d'horreur, sorti au cinéma le 21 octobre 2026."
+    "description": "Le film DC d'horreur, sorti au cinéma le 21 octobre 2026.",
+    "image": "images/steelbooks/clayface.webp"
   },
   {
     "id": "leprechaun-1-et-2",
