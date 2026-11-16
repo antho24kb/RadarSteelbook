@@ -73,8 +73,10 @@ function zoneHub() {
       const jour = e.date ? (({ m, d }) => `<b>${d}</b><span>${MOIS_COURT[m]}</span>`)(parts(e.date)) : `<b>?</b><span>${anneePeriode(e)}</span>`;
       const dateTxt = e.date ? (({ m, d }) => `${d} ${MOIS_LONG[m]}`)(parts(e.date)) : "";
       const lab = etiquetteDate(e);
+      // Vignette : image locale si elle existe, sinon cadre vide (alignement identique pour toutes les lignes).
+      const vig = e.image ? `<img class="vig" src="${attr(e.image)}" alt="" width="54" height="54" loading="lazy" decoding="async">` : `<span class="vig"></span>`;
       out.push(
-        `<div class="sb" data-id="${attr(e.id)}"><div class="jour">${jour}</div>` +
+        `<div class="sb" data-id="${attr(e.id)}"><div class="jour">${jour}</div>${vig}` +
         `<div class="txt"><div class="titre">${txt(e.titre)}</div><div class="date">${dateTxt}</div>${lab ? `<div class="statut">${txt(lab)}</div>` : ""}</div>` +
         (fnac(e) ? `<span class="excl">Exclusivité Fnac</span></div>` : `<a class="bouton" target="_blank" rel="noopener sponsored" href="${attr(e.lien)}">Amazon</a></div>`)
       );

@@ -4,140 +4,160 @@
     "date": "2026-11-04",
     "titre": "Supergirl",
     "lien": "https://www.amazon.fr/dp/B0H6XNWTVQ?tag=antho24kb-21",
-    "description": "Le film DC Studios."
+    "description": "Le film DC Studios.",
+    "image": "images/steelbooks/supergirl.webp"
   },
   {
     "id": "godzilla-minus-one",
     "date": "2026-11-04",
     "titre": "Godzilla Minus One",
     "lien": "https://www.amazon.fr/dp/B0HHK39LWS?tag=antho24kb-21",
-    "description": "Oscar des effets visuels."
+    "description": "Oscar des effets visuels.",
+    "image": "images/steelbooks/godzilla-minus-one.webp"
   },
   {
     "id": "disjoncte",
     "date": "2026-11-04",
     "titre": "Disjoncté",
     "lien": "https://www.amazon.fr/dp/B0H773SBRM?tag=antho24kb-21",
-    "description": "Jim Carrey, édition 30e anniversaire."
+    "description": "Jim Carrey, édition 30e anniversaire.",
+    "image": "images/steelbooks/disjoncte.webp"
   },
   {
     "id": "harry-potter-coffret-8-films",
     "date": "2026-11-04",
     "titre": "Harry Potter (coffret 8 films)",
     "lien": "https://www.amazon.fr/dp/B0HDQRT2R5?tag=antho24kb-21",
-    "description": "L'intégrale en 4K."
+    "description": "L'intégrale en 4K.",
+    "image": "images/steelbooks/harry-potter-coffret-8-films.webp"
   },
   {
     "id": "retour-vers-le-futur-trilogie",
     "date": "2026-11-04",
     "titre": "Retour vers le futur (trilogie)",
     "lien": "https://www.amazon.fr/dp/B0HFYLDLSW?tag=antho24kb-21",
-    "description": "Boîtier Flux Capacitor."
+    "description": "Boîtier Flux Capacitor.",
+    "image": "images/steelbooks/retour-vers-le-futur-trilogie.webp"
   },
   {
     "id": "game-of-thrones-coffret-8-steelbooks",
     "date": "2026-11-04",
     "titre": "Game of Thrones (coffret 8 steelbooks)",
     "lien": "https://www.amazon.fr/dp/B0GXLFVBPZ?tag=antho24kb-21",
-    "description": "L'intégrale de la série en 4K."
+    "description": "L'intégrale de la série en 4K.",
+    "image": "images/steelbooks/game-of-thrones-coffret-8-steelbooks.webp"
   },
   {
     "id": "coffret-horreur-80s",
     "date": "2026-11-04",
     "titre": "Coffret Horreur 80's",
     "lien": "https://www.amazon.fr/dp/B0HJ6LR5SZ/ref=cm_sw_r_as_gl_api_gl_i_FET33DYC7M8NPSAQ8P31?linkCode=ml1&tag=antho24kb-21&linkId=3d4ae8208081fd4bf930c7edaa194e82&gaOptInStatus=true",
-    "description": "Coffret de 5 films d'horreur des années 80."
+    "description": "Coffret de 5 films d'horreur des années 80.",
+    "image": "images/steelbooks/coffret-horreur-80s.webp"
   },
   {
     "id": "le-cercle-des-poetes-disparus",
     "date": "2026-11-11",
     "titre": "Le Cercle des poètes disparus",
     "lien": "https://www.amazon.fr/dp/B0HH13QP2Q?tag=antho24kb-21",
-    "description": "Avec Robin Williams."
+    "description": "Avec Robin Williams.",
+    "image": "images/steelbooks/le-cercle-des-poetes-disparus.webp"
   },
   {
     "id": "vaiana",
     "date": "2026-11-11",
     "titre": "Vaiana",
     "lien": "https://www.amazon.fr/dp/B0HJ6P9MHG?tag=antho24kb-21",
-    "description": "Le film Disney en live action."
+    "description": "Le film Disney en live action.",
+    "image": "images/steelbooks/vaiana.webp"
   },
   {
     "id": "evil-dead-burn",
     "date": "2026-11-12",
     "titre": "Evil Dead Burn",
     "lien": "https://www.amazon.fr/dp/B0HFKT2F6Q?tag=antho24kb-21",
-    "description": "Le nouvel Evil Dead."
+    "description": "Le nouvel Evil Dead.",
+    "image": "images/steelbooks/evil-dead-burn.webp"
   },
   {
     "id": "autant-en-emporte-le-vent",
     "date": "2026-11-18",
     "titre": "Autant en emporte le vent",
     "lien": "https://www.amazon.fr/dp/B0H9ZLF81Y?tag=antho24kb-21",
-    "description": "Le monument de 1939, en steelbook 4K."
+    "description": "Le monument de 1939, en steelbook 4K.",
+    "image": "images/steelbooks/autant-en-emporte-le-vent.webp"
   },
   {
     "id": "la-petite-boutique-des-horreurs",
     "date": "2026-11-18",
     "titre": "La Petite Boutique des horreurs",
     "lien": "https://www.amazon.fr/dp/B0H6XLD84P?tag=antho24kb-21",
-    "description": "Versions cinéma et director's cut."
+    "description": "Versions cinéma et director's cut.",
+    "image": "images/steelbooks/la-petite-boutique-des-horreurs.webp"
   },
   {
     "id": "lodyssee",
     "date": "2026-11-18",
     "titre": "L'Odyssée",
     "lien": "https://www.amazon.fr/dp/B0HMY41Z9K?tag=antho24kb-21",
-    "description": "Le nouveau film de Christopher Nolan."
+    "description": "Le nouveau film de Christopher Nolan.",
+    "image": "images/steelbooks/lodyssee.webp"
   },
   {
     "id": "les-ailes-de-lenfer",
     "date": "2026-11-18",
     "titre": "Les Ailes de l'enfer",
     "lien": "https://www.amazon.fr/dp/B0HLGX3TZ3?tag=antho24kb-21",
-    "description": "L'action culte avec Nicolas Cage."
+    "description": "L'action culte avec Nicolas Cage.",
+    "image": "images/steelbooks/les-ailes-de-lenfer.webp"
   },
   {
     "id": "high-society",
     "date": "2026-11-18",
     "titre": "High Society",
     "lien": "https://www.amazon.fr/dp/B0H8CQPLYD?tag=antho24kb-21",
-    "description": "Bing Crosby, Grace Kelly, Frank Sinatra."
+    "description": "Bing Crosby, Grace Kelly, Frank Sinatra.",
+    "image": "images/steelbooks/high-society.webp"
   },
   {
     "id": "le-bon-la-brute-et-le-truand",
     "date": "2026-11-18",
     "titre": "Le Bon, la Brute et le Truand",
     "lien": "https://www.amazon.fr/dp/B0H5XGB5MW?tag=antho24kb-21",
-    "description": "Le western de Sergio Leone."
+    "description": "Le western de Sergio Leone.",
+    "image": "images/steelbooks/le-bon-la-brute-et-le-truand.webp"
   },
   {
     "id": "scary-movie",
     "date": "2026-11-25",
     "titre": "Scary Movie",
     "lien": "https://www.amazon.fr/dp/B0HFKSR75T?tag=antho24kb-21",
-    "description": "La parodie culte, en steelbook 4K."
+    "description": "La parodie culte, en steelbook 4K.",
+    "image": "images/steelbooks/scary-movie.webp"
   },
   {
     "id": "rocky",
     "date": "2026-11-25",
     "titre": "Rocky",
     "lien": "https://www.amazon.fr/dp/B0HFYLWR9S?tag=antho24kb-21",
-    "description": "Le classique de Stallone, en steelbook 4K."
+    "description": "Le classique de Stallone, en steelbook 4K.",
+    "image": "images/steelbooks/rocky.webp"
   },
   {
     "id": "hook",
     "date": "2026-11-25",
     "titre": "Hook",
     "lien": "https://www.amazon.fr/dp/B0HJRYSXDQ?tag=antho24kb-21",
-    "description": "Spielberg, édition 35e anniversaire."
+    "description": "Spielberg, édition 35e anniversaire.",
+    "image": "images/steelbooks/hook.webp"
   },
   {
     "id": "benjamin-gates-et-le-tresor-des-templiers",
     "date": "2026-11-25",
     "titre": "Benjamin Gates et le trésor des templiers",
     "lien": "https://www.amazon.fr/dp/B0HLHB1445?tag=antho24kb-21",
-    "description": "Avec Nicolas Cage, en steelbook 4K."
+    "description": "Avec Nicolas Cage, en steelbook 4K.",
+    "image": "images/steelbooks/benjamin-gates-et-le-tresor-des-templiers.webp"
   },
   {
     "id": "loeuf-de-lange-steelbook-4k",
@@ -155,91 +175,104 @@
         "vu_le": "2026-11-16",
         "note": "« Sortie (prochainement) », fiche lue en direct"
       }
-    ]
+    ],
+    "image": "images/steelbooks/loeuf-de-lange-steelbook-4k.webp"
   },
   {
     "id": "le-dernier-combat",
     "date": "2026-12-02",
     "titre": "Le Dernier Combat",
     "lien": "https://www.amazon.fr/s?k=Le%20Dernier%20Combat%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/le-dernier-combat.webp"
   },
   {
     "id": "shrek",
     "date": "2026-12-02",
     "titre": "Shrek",
     "lien": "https://www.amazon.fr/s?k=Shrek%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/shrek.webp"
   },
   {
     "id": "the-crow",
     "date": "2026-12-02",
     "titre": "The Crow",
     "lien": "https://www.amazon.fr/s?k=The%20Crow%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/the-crow.webp"
   },
   {
     "id": "house-of-the-dragon-saison-3",
     "date": "2026-12-02",
     "titre": "House of the Dragon, saison 3",
     "lien": "https://www.amazon.fr/dp/B0HDQZXGJ1?tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/house-of-the-dragon-saison-3.webp"
   },
   {
     "id": "le-seigneur-des-anneaux-les-anneaux-de-pouvoir-saison-1",
     "date": "2026-12-09",
     "titre": "Le Seigneur des anneaux : Les Anneaux de Pouvoir, saison 1",
     "lien": "https://www.amazon.fr/s?k=Les%20Anneaux%20de%20Pouvoir%20saison%201%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/le-seigneur-des-anneaux-les-anneaux-de-pouvoir-saison-1.webp"
   },
   {
     "id": "le-seigneur-des-anneaux-les-anneaux-de-pouvoir-saison-2",
     "date": "2026-12-09",
     "titre": "Le Seigneur des anneaux : Les Anneaux de Pouvoir, saison 2",
     "lien": "https://www.amazon.fr/s?k=Les%20Anneaux%20de%20Pouvoir%20saison%202%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/le-seigneur-des-anneaux-les-anneaux-de-pouvoir-saison-2.webp"
   },
   {
     "id": "princesse-mononoke",
     "date": "2026-12-11",
     "titre": "Princesse Mononoké",
     "lien": "https://www.amazon.fr/s?k=Princesse%20Mononoke%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/princesse-mononoke.webp"
   },
   {
     "id": "spider-man-brand-new-day-steelbook-b",
     "date": "2026-12-16",
     "titre": "Spider-Man : Brand New Day (steelbook B)",
     "lien": "https://www.amazon.fr/s?k=Spider-Man%20Brand%20New%20Day%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/spider-man-brand-new-day-steelbook-b.webp"
   },
   {
     "id": "a-i-intelligence-artificielle",
     "date": "2026-12-16",
     "titre": "A.I. Intelligence artificielle",
     "lien": "https://www.amazon.fr/s?k=A.I.%20Intelligence%20artificielle%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/a-i-intelligence-artificielle.webp"
   },
   {
     "id": "la-fin-doak-street",
     "date": "2026-12-16",
     "titre": "La Fin d'Oak Street",
     "lien": "https://www.amazon.fr/s?k=La%20Fin%20d%20Oak%20Street%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/la-fin-doak-street.webp"
   },
   {
     "id": "piege-de-cristal",
     "date": "2026-12-16",
     "titre": "Piège de cristal",
     "lien": "https://www.amazon.fr/dp/B0HN5W8K7P/ref=cm_sw_r_as_gl_api_gl_i_1XA8R44XYKG4RJ5J9PJZ?linkCode=ml1&tag=antho24kb-21&linkId=aae3af2607a15a44ab3953318276a4b1&gaOptInStatus=true",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/piege-de-cristal.webp"
   },
   {
     "id": "terminator",
     "date": "2026-12-21",
     "titre": "Terminator",
     "lien": "https://www.amazon.fr/dp/B0HNPYZWTY?tag=antho24kb-21",
-    "description": "Le classique de James Cameron, en steelbook 4K."
+    "description": "Le classique de James Cameron, en steelbook 4K.",
+    "image": "images/steelbooks/terminator.webp"
   },
   {
     "id": "malfaisante-other-mommy",
@@ -253,14 +286,16 @@
     "date": "2027-01-20",
     "titre": "Ginger Snaps",
     "lien": "https://www.amazon.fr/s?k=Ginger%20Snaps%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/ginger-snaps.webp"
   },
   {
     "id": "resident-evil-2026",
     "date": "2027-01-22",
     "titre": "Resident Evil (2026)",
     "lien": "https://www.amazon.fr/s?k=Resident%20Evil%202026%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/resident-evil-2026.webp"
   },
   {
     "id": "les-ensorceleuses-2",
@@ -274,49 +309,56 @@
     "date": "2027-01-27",
     "titre": "Une journée en enfer",
     "lien": "https://www.amazon.fr/dp/B0HN5PJJQQ/ref=cm_sw_r_as_gl_api_gl_i_CY5S2R9P4ZEK5XQ384WC?linkCode=ml1&tag=antho24kb-21&linkId=e70e29da57c4076edf83b0ee4c33b3d7&gaOptInStatus=true",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/une-journee-en-enfer.webp"
   },
   {
     "id": "trainspotting",
     "date": "2027-02-03",
     "titre": "Trainspotting",
     "lien": "https://www.amazon.fr/s?k=Trainspotting%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/trainspotting.webp"
   },
   {
     "id": "king-kong",
     "date": "2027-02-03",
     "titre": "King Kong",
     "lien": "https://www.amazon.fr/s?k=King%20Kong%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/king-kong.webp"
   },
   {
     "id": "twister",
     "date": "2027-02-03",
     "titre": "Twister",
     "lien": "https://www.amazon.fr/s?k=Twister%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/twister.webp"
   },
   {
     "id": "avatar-le-dernier-maitre-de-lair",
     "date": "2027-02-10",
     "titre": "Avatar : Le Dernier maître de l'air",
     "lien": "https://www.amazon.fr/s?k=Avatar%20Aang%20Le%20Dernier%20maitre%20de%20l%20air%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/avatar-le-dernier-maitre-de-lair.webp"
   },
   {
     "id": "street-fighter-2026-steelbook-heros",
     "date": "2027-02-11",
     "titre": "Street Fighter (2026), steelbook Héros",
     "lien": "https://www.amazon.fr/dp/B0HN2TNGRD/ref=cm_sw_r_as_gl_api_gl_i_QSR1FH6Z769P6QPZV140?linkCode=ml1&tag=antho24kb-21&linkId=56d97796c8f34bf357a3cb61aa259092&gaOptInStatus=true",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/street-fighter-2026-steelbook-heros.webp"
   },
   {
     "id": "street-fighter-2026-steelbook-vilains",
     "date": "2027-02-11",
     "titre": "Street Fighter (2026), steelbook Vilains",
     "lien": "https://www.amazon.fr/s?k=Street%20Fighter%202026%204K%20steelbook%20Vilains&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/street-fighter-2026-steelbook-vilains.webp"
   },
   {
     "id": "clayface",
@@ -330,14 +372,16 @@
     "date": "2027-02-24",
     "titre": "Leprechaun 1 et 2",
     "lien": "https://www.amazon.fr/dp/B0HQKD2QWH/ref=cm_sw_r_as_gl_api_gl_i_DDYPXB7J9N4KHFFM332Y?linkCode=ml1&tag=antho24kb-21&linkId=a1143863ae6bc39e1e0ba6c23c0b1f87&gaOptInStatus=true",
-    "description": "Steelbook 4K, sortie en France."
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/leprechaun-1-et-2.webp"
   },
   {
     "id": "star-trek-original-collection",
     "date": "2027-04-30",
     "titre": "Star Trek Original Collection",
     "lien": "https://www.amazon.fr/s?k=Star%20Trek%20Original%20Collection%204K%20steelbook&tag=antho24kb-21",
-    "description": "Coffret avec steelbook 4K, sortie en France."
+    "description": "Coffret avec steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/star-trek-original-collection.webp"
   },
   {
     "id": "retour-a-silent-hill-collector-steelbook",
@@ -381,6 +425,7 @@
         "vu_le": "2026-11-16",
         "note": "« Sortie (prochainement) », groupe 2027, fiche lue en direct"
       }
-    ]
+    ],
+    "image": "images/steelbooks/loeuf-de-lange-collector-speciale-fnac.webp"
   }
 ]

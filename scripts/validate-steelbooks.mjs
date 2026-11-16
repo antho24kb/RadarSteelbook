@@ -1,6 +1,6 @@
 // Depuis la racine du dépôt : node scripts/validate-steelbooks.mjs
 // Valide data/steelbooks.json (source unique des produits) et data/exclusions.json (exclusions éditoriales d'Antho).
-import { readFile } from "node:fs/promises";
+import { readFile, access } from "node:fs/promises";
 
 const entries = JSON.parse(await readFile(new URL("../data/steelbooks.json", import.meta.url), "utf8"));
 const exclusions = JSON.parse(await readFile(new URL("../data/exclusions.json", import.meta.url), "utf8"));
@@ -10,8 +10,10 @@ const seenLinks = new Set();
 const seenIds = new Set();
 const seenNormTitles = new Set();
 const seenAsins = new Set();
+const seenImages = new Set();
+const imagePattern = /^images\/steelbooks\/[a-z0-9]+(?:-[a-z0-9]+)*\.webp$/;
 // id et titre obligatoires ; date obligatoire (null seulement si statut_date vaut a_confirmer) ; lien obligatoire sauf distribution fnac_exclusif.
-const allowedKeys = ["id", "titre", "date", "lien", "description", "statut_date", "periode", "distribution", "conserver", "conserver_motif", "date_sources"];
+const allowedKeys = ["id", "titre", "date", "lien", "description", "statut_date", "periode", "distribution", "conserver", "conserver_motif", "date_sources", "image"];
 const statuts = ["confirmee", "annoncee", "a_confirmer"];
 const distributions = ["amazon", "fnac_exclusif"];
 const idPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -88,6 +90,16 @@ for (const [index, entry] of entries.entries()) {
         if (!ok) { errors.push(`Ligne ${row} : date_sources invalide (source, valeur ou null, vu_le, url et note facultatives).`); break; }
         if (pricePattern.test(`${src.source} ${src.note || ""}`)) { errors.push(`Ligne ${row} : un prix ne doit pas apparaître dans les sources de date.`); break; }
       }
+    }
+  }
+
+  // Vignette facultative (calendrier du hub) : fichier local du dépôt, un fichier par produit.
+  if (entry.image !== undefined) {
+    if (typeof entry.image !== "string" || !imagePattern.test(entry.image)) errors.push(`Ligne ${row} : image invalide (images/steelbooks/<nom>.webp attendu).`);
+    else {
+      if (seenImages.has(entry.image)) errors.push(`Ligne ${row} : image déjà utilisée par une autre entrée.`);
+      seenImages.add(entry.image);
+      try { await access(new URL("../" + entry.image, import.meta.url)); } catch { errors.push(`Ligne ${row} : fichier image introuvable (${entry.image}).`); }
     }
   }
 
