@@ -78,6 +78,14 @@ for (const p of ["index.html", "cadeaux-collectionneurs.html"]) check(!price.tes
 
 // 7. Catalogue et flux inchangés
 try { execFileSync("node", ["scripts/validate-steelbooks.mjs"], { encoding: "utf8" }); ok.push("catalogue data/steelbooks.json : validateur OK"); } catch (e) { errors.push("validate-steelbooks : " + (e.stdout || e.message)); }
+try { execFileSync("node", ["scripts/build-catalogue.mjs", "--check"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }); ok.push("catalogue : zones générées de steelbook.html et index.html à jour avec data/steelbooks.json"); } catch (e) { errors.push("build-catalogue --check : " + (e.stderr || e.stdout || e.message)); }
+{
+  const ids = JSON.parse(await read("data/steelbooks.json")).map((e) => e.id).sort().join();
+  const dataIds = (h) => [...h.matchAll(/<(?:section|div) class="(?:card|sb)" data-id="([^"]+)"/g)].map((m) => m[1]);
+  const sbIds = dataIds(html["steelbook.html"]), hubIds = dataIds(hub);
+  check(sbIds.slice().sort().join() === ids && new Set(sbIds).size === sbIds.length, "steelbook.html : une carte générée par produit du JSON, data-id uniques");
+  check(hubIds.slice().sort().join() === ids && new Set(hubIds).size === hubIds.length, "index.html : un élément de calendrier par produit du JSON, data-id uniques");
+}
 if (BASE_REF) {
   const feedChanged = execFileSync("git", ["diff", "--name-only", BASE_REF, "--", "feed.xml", "data/steelbooks.json", "alertes", ".github"], { encoding: "utf8" }).trim();
   check(feedChanged === "", `feed.xml, data/, alertes/, .github/ : non modifiés depuis ${BASE_REF}`);

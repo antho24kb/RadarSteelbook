@@ -1,0 +1,44 @@
+[
+  {
+    "titre": "Aguirre",
+    "motif": "introuvable sur Amazon",
+    "decide_par": "Antho",
+    "reference": "6ea407a (2026-10-23)"
+  },
+  {
+    "titre": "La Bataille de Gaulle",
+    "motif": "introuvable sur Amazon",
+    "decide_par": "Antho",
+    "reference": "6ea407a (2026-10-23)"
+  },
+  {
+    "titre": "Kill Bill",
+    "motif": "introuvable sur Amazon",
+    "decide_par": "Antho",
+    "reference": "6ea407a (2026-10-23)"
+  },
+  {
+    "titre": "Projet Dernière Chance",
+    "motif": "introuvable sur Amazon (pas d'autre édition attendue)",
+    "decide_par": "Antho",
+    "reference": "6ea407a (2026-10-23)"
+  },
+  {
+    "titre": "Narnia chapitre 1",
+    "motif": "introuvable sur Amazon",
+    "decide_par": "Antho",
+    "reference": "6ea407a (2026-10-23)"
+  },
+  {
+    "titre": "Die Hard 2",
+    "motif": "non disponible sur Amazon",
+    "decide_par": "Antho",
+    "reference": "5c134dd (2026-11-15)"
+  },
+  {
+    "titre": "58 minutes pour vivre",
+    "motif": "introuvable sur Amazon (titre français de Die Hard 2)",
+    "decide_par": "Antho",
+    "reference": "ae9732b (2026-11-16)"
+  }
+]
