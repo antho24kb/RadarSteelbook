@@ -34,3 +34,6 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-09 | 7j | 🎬 Cette semaine en steelbook ! Le Cercle | 0,0 | 561 | 5,06 | 28,3 | 12,5 | 23 | 0 | 1 | 1 |
 | 2026-11-14 | 24h | 🎬 1 000 abonnés ! Merci à toute la team | 0,0 | 350 | 3,41 | 4,9 | 22,9 | 10 | 0 | 0 | 4 |
 | 2026-11-14 | 24h | 🍊 Orange Mécanique Titans of Cult de ret | 8,0 | 432 | 4,14 | 13,8 | 4,6 | 11 | 0 | 0 | 0 |
+| 2026-11-09 | 7j | ON RÈGLE ÇA 🔥 Quel est le meilleur mécha | 19,0 | 350 | 3,61 | 3,9 | 22,9 | 8 | 0 | 0 | 0 |
+| 2026-11-10 | 7j | Ma collection : La Momie en 4K 🏺 Le coff | 42,4 | 3030 | 4,50 | 1,7 | 6,3 | 110 | 13 | 4 | 6 |
+| 2026-11-15 | 24h | 🖼️ Ton mur en galerie Steelbook · lien a | 0,0 | 583 | 6,60 | 30,3 | 5,1 | 22 | 1 | 7 | 1 |
