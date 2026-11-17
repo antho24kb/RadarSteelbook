@@ -37,3 +37,5 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-09 | 7j | ON RÈGLE ÇA 🔥 Quel est le meilleur mécha | 19,0 | 350 | 3,61 | 3,9 | 22,9 | 8 | 0 | 0 | 0 |
 | 2026-11-10 | 7j | Ma collection : La Momie en 4K 🏺 Le coff | 42,4 | 3030 | 4,50 | 1,7 | 6,3 | 110 | 13 | 4 | 6 |
 | 2026-11-15 | 24h | 🖼️ Ton mur en galerie Steelbook · lien a | 0,0 | 583 | 6,60 | 30,3 | 5,1 | 22 | 1 | 7 | 1 |
+| 2026-11-16 | 24h | 🎬 The Odyssey en steelbook 4K, de nouvea | 9,0 | 434 | 3,79 | 9,6 | 9,2 | 10 | 1 | 1 | 2 |
+| 2026-11-16 | 24h | 🎬 6 steelbooks 4K sortent cette semaine | 0,0 | 732 | 8,11 | 32,3 | 16,4 | 23 | 1 | 3 | 0 |
