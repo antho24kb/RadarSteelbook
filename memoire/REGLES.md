@@ -19,6 +19,13 @@
 - Vidéos « duel steelbook » : modèle Dune, 20 s, sans musique (Antho gère la musique), effets sonores légers en thème du film, marque LE DARON.
 - Unboxings : garder le son d'origine, vitesse normale, beaucoup de coupes.
 
+## Écran de conclusion « ABONNE-TOI » (règle permanente, validée par Antho le 17 nov. 2026)
+- Obligatoire à la fin de CHAQUE contenu TikTok LE DARON, sans exception de format : carrousels = dernière slide (toujours après la slide finale existante : question, lien en bio, etc.) ; vidéos = séquence de fin animée de 3,2 s ajoutée à la suite.
+- Formats concernés : Sorties de la semaine, Sortie du jour, Le Duel, La Question du Daron (version 1080×1440), Bon plan du Daron, alertes précommande et retour en stock, carrousels de Noël, Ma collection et Unboxing (Antho filme : Claude monte et ajoute la séquence ; si Antho monte lui-même, il colle `abonne-toi-fin.mp4` en fin de vidéo), et tout futur format.
+- Texte fixe : « ABONNE-TOI » (pastille or, bien lisible) + accroche « Pour ne rien rater de l'univers Steelbook ! ». Charte inchangée : fond noir #111318 avec lueur dorée, or #F5B642, blanc, cadres d'angle, signature « LE DARON » en haut à gauche. Rien d'autre à l'écran.
+- Fichiers prêts à l'emploi dans `charte/` : `abonne-toi-1080x1920.png` (carrousels), `abonne-toi-1080x1440.png` (La Question du Daron), `abonne-toi-fin.mp4` (vidéos, muet), et `generer-abonne-toi.py` pour les régénérer. Ne pas modifier le design sans validation d'Antho.
+- Contrôle avant livraison de tout contenu : la conclusion est bien présente (dernière slide ou dernière séquence).
+
 ## Design
 - Pas de rendu « trop IA » : ni fonds dégradés génériques, ni effets néon gratuits.
 - Mobile d'abord (iPhone) : tout visible sans défiler horizontalement, largeur de test 390 px.
@@ -36,7 +43,7 @@
 - Unboxing : Antho filme ; structure gros plans → ouverture → finitions → détails ; voix facultative.
 - Ma collection : format conservé ; valoriser éditions, coffrets, détails ; meilleur gros plan dans les 2 premières secondes.
 - Bon plan du Daron : produit et intérêt avant le prix ; prix et dispo vérifiés ; lien affilié correct ; Radar Steelbook amené naturellement.
-- Alertes : steelbook visible dès la 1re image.
+- Alertes : steelbook visible dès la 1re image. Terminer par la séquence « ABONNE-TOI » (voir section dédiée).
 - Publication à 19h (exception : La Question du Daron le samedi à 12h). Charte, calendrier et formats inchangés sans validation d'Antho. « Le saviez-vous ? » ne revient pas. Identité steelbook au centre, Radar Steelbook comme destination.
 - Suivi : chaque soir, relevé silencieux des stats à 24h et 7j dans STATS.md ; chaque dimanche 12h, rapport hebdo (meilleures/moins bonnes publications, formats en hausse/baisse, meilleures accroches, rétention, recommandations) avant la préparation de la semaine.
 
