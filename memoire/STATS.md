@@ -39,3 +39,7 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-15 | 24h | 🖼️ Ton mur en galerie Steelbook · lien a | 0,0 | 583 | 6,60 | 30,3 | 5,1 | 22 | 1 | 7 | 1 |
 | 2026-11-16 | 24h | 🎬 The Odyssey en steelbook 4K, de nouvea | 9,0 | 434 | 3,79 | 9,6 | 9,2 | 10 | 1 | 1 | 2 |
 | 2026-11-16 | 24h | 🎬 6 steelbooks 4K sortent cette semaine | 0,0 | 732 | 8,11 | 32,3 | 16,4 | 23 | 1 | 3 | 0 |
+| 2026-11-11 | 7j | 📦 Mes nouveaux steelbooks de la semaine | 58,4 | 448 | 8,25 | 1,7 | 6,7 | 19 | 1 | 1 | 0 |
+| 2026-11-12 | 7j | 🔥 Sortie du jour et d’hier. Liens affili | 0,0 | 489 | 3,89 | 18,4 | 4,1 | 7 | 0 | 1 | 3 |
+| 2026-11-17 | 24h | 🔥 Quelle est LA meilleure saga du cinéma | 0,0 | 536 | 9,27 | 12,2 | 18,7 | 14 | 1 | 3 | 0 |
+| 2026-11-17 | 24h | 📦 Coffret + 3 steelbooks Le Seigneur des | 80,3 | 2763 | 7,65 | 0,4 | 6,9 | 94 | 5 | 7 | 4 |
