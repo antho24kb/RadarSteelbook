@@ -43,3 +43,6 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-12 | 7j | 🔥 Sortie du jour et d’hier. Liens affili | 0,0 | 489 | 3,89 | 18,4 | 4,1 | 7 | 0 | 1 | 3 |
 | 2026-11-17 | 24h | 🔥 Quelle est LA meilleure saga du cinéma | 0,0 | 536 | 9,27 | 12,2 | 18,7 | 14 | 1 | 3 | 0 |
 | 2026-11-17 | 24h | 📦 Coffret + 3 steelbooks Le Seigneur des | 80,3 | 2763 | 7,65 | 0,4 | 6,9 | 94 | 5 | 7 | 4 |
+| 2026-11-13 | 7j | 📺 Tes Steelbooks 4K, tu les regardes sur | 0,0 | 756 | 12,68 | 25,9 | 47,6 | 20 | 0 | 11 | 2 |
+| 2026-11-18 | 24h | 🚨 Précommande ouverte : La La Land en st | 11,2 | 706 | 3,88 | 6,7 | 0,0 | 26 | 4 | 3 | 2 |
+| 2026-11-18 | 24h | 🎬 Aujourd'hui, 7 steelbooks 4K débarquen | 32,4 | 650 | 6,67 | 3,6 | 6,2 | 20 | 0 | 1 | 4 |
