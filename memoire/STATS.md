@@ -46,3 +46,6 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-13 | 7j | 📺 Tes Steelbooks 4K, tu les regardes sur | 0,0 | 756 | 12,68 | 25,9 | 47,6 | 20 | 0 | 11 | 2 |
 | 2026-11-18 | 24h | 🚨 Précommande ouverte : La La Land en st | 11,2 | 706 | 3,88 | 6,7 | 0,0 | 26 | 4 | 3 | 2 |
 | 2026-11-18 | 24h | 🎬 Aujourd'hui, 7 steelbooks 4K débarquen | 32,4 | 650 | 6,67 | 3,6 | 6,2 | 20 | 0 | 1 | 4 |
+| 2026-11-13 | 7j | ⚔️ Duel Gladiator : 20 ans, Titans of Cu | 20,0 | 503 | 6,78 | 8,9 | 8,0 | 19 | 1 | 0 | 0 |
+| 2026-11-14 | 7j | 🎬 1 000 abonnés ! Merci à toute la team | 0,0 | 419 | 3,35 | 4,7 | 19,1 | 13 | 0 | 0 | 5 |
+| 2026-11-19 | 24h | 📦 Unboxing ASMR L'Odyssée, deux éditions | 76,2 | 652 | 9,67 | 1,7 | 23,0 | 22 | 0 | 2 | 2 |
