@@ -26,6 +26,10 @@
 - Fichiers prêts à l'emploi dans `charte/` : `abonne-toi-1080x1920.png` (carrousels), `abonne-toi-1080x1440.png` (La Question du Daron), `abonne-toi-fin.mp4` (vidéos, muet), et `generer-abonne-toi.py` pour les régénérer. Ne pas modifier le design sans validation d'Antho.
 - Contrôle avant livraison de tout contenu : la conclusion est bien présente (dernière slide ou dernière séquence).
 
+## Cadres d'angle et centrage (règle permanente, 21 nov. 2026, demande d'Antho)
+- Sur tous les visuels TikTok (vidéos et carrousels) : cadres d'angle plus proches du centre (rentrés vers l'intérieur, pas collés aux bords) et contenu bien centré, marges égales gauche/droite et haut/bas, pour que TikTok ne coupe rien.
+- Constat : sur l'alerte « retour en stock » Projet Dernière Chance du 21 nov., l'affichage dans TikTok/iPhone était décalé et les cadres touchaient les bords. Corriger dès le prochain contenu.
+
 ## Design
 - Pas de rendu « trop IA » : ni fonds dégradés génériques, ni effets néon gratuits.
 - Mobile d'abord (iPhone) : tout visible sans défiler horizontalement, largeur de test 390 px.
