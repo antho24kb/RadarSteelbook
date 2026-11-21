@@ -160,6 +160,14 @@
     "image": "images/steelbooks/benjamin-gates-et-le-tresor-des-templiers.webp"
   },
   {
+    "id": "projet-derniere-chance",
+    "date": "2026-11-25",
+    "titre": "Projet Dernière Chance",
+    "lien": "https://www.amazon.fr/dp/B0H72H4JMK?tag=antho24kb-21",
+    "description": "Avec Ryan Gosling, en steelbook 4K.",
+    "image": "images/steelbooks/projet-derniere-chance.webp"
+  },
+  {
     "id": "loeuf-de-lange-steelbook-4k",
     "date": "2026-12-01",
     "titre": "L'Oeuf de l'ange (steelbook 4K)",
