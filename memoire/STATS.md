@@ -4,6 +4,26 @@ Sources : Windsor.ai (tiktok_organic, compte « Les Steelbook du Daron ») et Me
 
 ## Bilans hebdo
 
+### Semaine du 16 au 22 nov. 2026 (relevé du 22 nov., 12h, source Windsor.ai, cache)
+| Publication | Format | Vues | Temps moyen | Vu en entier | Com./1000 | Likes | Partages | Favoris | Abonnés |
+|---|---|---|---|---|---|---|---|---|---|
+| Le Seigneur des Anneaux (80 s) | Unboxing ASMR | 3115 | 7,7 s | 0,5 % | 6,7 | 108 | 5 | 8 | 5 |
+| Le steelbook que tu regrettes d'avoir raté ? | Question du Daron (carrousel) | 848 | 13,1 s | 34,5 % | 27,1 | 14 | 4 | 1 | 4 |
+| 6 steelbooks cette semaine | Sorties de la semaine | 851 | 7,7 s | 30,7 % | 14,1 | 25 | 1 | 4 | 1 |
+| Unboxing L'Odyssée (76 s) | Unboxing ASMR | 725 | 9,4 s | 1,7 % | 20,7 | 24 | 0 | 2 | 2 |
+| Aujourd'hui, 7 steelbooks | Sortie du jour | 730 | 6,6 s | 3,3 % | 6,8 | 21 | 0 | 1 | 4 |
+| Meilleure saga du cinéma | Question (carrousel) | 603 | 9,7 s | 12,1 % | 23,2 | 15 | 1 | 3 | 1 |
+| Projet Dernière Chance (11 s) | Alerte | 570 | 4,7 s | 9,3 % | 15,8 | 15 | 0 | 1 | 2 |
+| Duel The Film Vault (25 s) | Le Duel | 355 | 4,4 s | 2,9 % | 19,7 | 7 | 0 | 0 | 0 |
+| Clap (dim. 22) | Bon plan | 1 | n.d. | n.d. | n.d. | 0 | 0 | 0 | 0 |
+
+Semaine : 7 797 vues sur 8 publications (~975/publication ; 9-15 nov. : ~605) ; 13,6 com./1000 vues (9-15 nov. : 10,7) ; 23 nouveaux abonnés (9-15 nov. : ≥15). Le Clap du dimanche, publié le jour du relevé, est exclu des totaux.
+Ce qui marche : questions communautaires (carrousels) = meilleur temps moyen (13,1 s et 9,7 s) et vues complètes (34,5 %, 12,1 %), 27,1 com./1000 pour « le steelbook que tu regrettes » ; carrousel Sorties de la semaine solide (30,7 % vus en entier) ; unboxing ASMR LOTR = record vues (3115), likes (108) et favoris (8).
+Ce qui ne marche pas : vues complètes < 2 % sur les vidéos de 76-80 s malgré le volume ; Duel (355 vues, 0 abonné, 4,4 s) ; alerte (4,7 s) ; sortie du jour (6,8 com./1000).
+Meilleures accroches : « Le steelbook que tu regrettes d'avoir raté ? Balance son nom en commentaire » ; « 6 steelbooks 4K sortent cette semaine : lequel fera partie de ta collection ? »
+Rétention : décrochage des vidéos longues autour de 8-10 s ; seuls les carrousels dépassent 12 s de temps moyen.
+Recommandations : 1) garder une question communautaire chaque semaine, ancrée sur le vécu de collectionneur (regret, achat, installation) ; 2) unboxing : même ASMR mais première phrase/visuel fort avant 3 s et durée plus courte pour remonter le taux de vue complète ; 3) Duel : montrer les deux éditions dès la 1re seconde et trancher sur un seul argument ; 4) Sorties de la semaine : sortie la plus forte en 1re slide + question de préférence ; 5) surveiller l'effet de « LIEN EN BIO » sur la V8 Dark Knight du mardi 24 nov.
+
 ### Semaine du 9 au 15 nov. 2026 (relevé du 15 nov., 11h)
 | Publication | Format | Vues | Temps moyen | Vu en entier | Com./1000 | Favoris | Abonnés |
 |---|---|---|---|---|---|---|---|
