@@ -29,6 +29,9 @@
 ## Cadres d'angle et centrage (règle permanente, 21 nov. 2026, demande d'Antho)
 - Sur tous les visuels TikTok (vidéos et carrousels) : cadres d'angle plus proches du centre (rentrés vers l'intérieur, pas collés aux bords) et contenu bien centré, marges égales gauche/droite et haut/bas, pour que TikTok ne coupe rien.
 - Constat : sur l'alerte « retour en stock » Projet Dernière Chance du 21 nov., l'affichage dans TikTok/iPhone était décalé et les cadres touchaient les bords. Corriger dès le prochain contenu.
+- **Format des carrousels (règle permanente, 22 nov. 2026, demande d'Antho)** : tous les carrousels TikTok LE DARON (Sorties de la semaine, Sortie du jour, Bon plan, Question du Daron…) sont en **3:4, 1080×1440**, jamais en 1080×1920 (TikTok coupe le 1080×1920 en carrousel photo et l'image déborde). Cadre d'angle rentré : environ 60 px des bords gauche/droite et haut/bas, « LE DARON » et le numéro de slide à l'intérieur du cadre, contenu centré. Modèle visuel : son carrousel « Autant en emporte le vent ».
+- Dernière slide : écran ABONNE-TOI refait au même format 3:4 avec le même cadre rentré (le fichier officiel 1080×1920 ne s'applique qu'aux vidéos).
+- Les vidéos restent en 9:16 1080×1920, avec le même cadre rentré (voir ci-dessus) et la signature ABONNE-TOI en fin.
 
 ## Design
 - Pas de rendu « trop IA » : ni fonds dégradés génériques, ni effets néon gratuits.
