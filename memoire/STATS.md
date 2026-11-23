@@ -53,3 +53,5 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-15 | 7j | 🖼️ Ton mur en galerie Steelbook · lien a | 0,0 | 673 | 6,42 | 29,7 | 4,5 | 22 | 1 | 8 | 1 |
 | 2026-11-21 | 24h | 🔔 Projet Dernière Chance en steelbook 4K | 11,2 | 636 | 4,57 | 9,0 | 14,2 | 15 | 0 | 1 | 2 |
 | 2026-11-21 | 24h | 😭 Le steelbook que tu regrettes d’avoir | 0,0 | 1189 | 12,28 | 34,0 | 23,5 | 19 | 4 | 1 | 5 |
+| 2026-11-17 | 7j | 🔥 Quelle est LA meilleure saga du cinéma | 0,0 | 626 | 9,66 | 12,2 | 24,0 | 18 | 1 | 3 | 1 |
+| 2026-11-22 | 24h | 🎬 Le détail qui manque à ton coin cinéma | 0,0 | 394 | 5,57 | 21,6 | 0,0 | 10 | 0 | 0 | 1 |
