@@ -379,6 +379,14 @@
     "image": "images/steelbooks/leprechaun-1-et-2.webp"
   },
   {
+    "id": "heart-of-the-beast",
+    "date": "2027-03-03",
+    "titre": "Heart of the Beast",
+    "lien": "https://www.amazon.fr/dp/B0HSQMVY2N?tag=antho24kb-21",
+    "description": "Steelbook 4K + Blu-ray édition limitée.",
+    "image": "images/steelbooks/heart-of-the-beast.webp"
+  },
+  {
     "id": "star-trek-original-collection",
     "date": "2027-04-30",
     "titre": "Star Trek Original Collection",
