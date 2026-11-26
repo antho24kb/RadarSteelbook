@@ -57,3 +57,5 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-22 | 24h | 🎬 Le détail qui manque à ton coin cinéma | 0,0 | 394 | 5,57 | 21,6 | 0,0 | 10 | 0 | 0 | 1 |
 | 2026-11-17 | 7j | 📦 Coffret + 3 steelbooks Le Seigneur des | 80,3 | 3281 | 7,64 | 0,5 | 6,4 | 115 | 5 | 8 | 5 |
 | 2026-11-23 | 24h | 🎬 Les 5 steelbooks 4K qui sortent cette  | 0,0 | 546 | 8,77 | 12,2 | 14,7 | 21 | 0 | 0 | 2 |
+| 2026-11-19 | 7j | 📦 Unboxing ASMR L'Odyssée, deux éditions | 76,2 | 820 | 9,25 | 1,6 | 18,3 | 25 | 0 | 2 | 3 |
+| 2026-11-25 | 24h | 🔥 5 steelbooks 4K sortent aujourd'hui ·  | 0,0 | 404 | 4,16 | 6,5 | 5,0 | 13 | 0 | 0 | 0 |
