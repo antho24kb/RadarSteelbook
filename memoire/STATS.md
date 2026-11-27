@@ -59,3 +59,6 @@ Meilleures accroches : « Ton streaming peut disparaître demain. Mon steelbook,
 | 2026-11-23 | 24h | 🎬 Les 5 steelbooks 4K qui sortent cette  | 0,0 | 546 | 8,77 | 12,2 | 14,7 | 21 | 0 | 0 | 2 |
 | 2026-11-19 | 7j | 📦 Unboxing ASMR L'Odyssée, deux éditions | 76,2 | 820 | 9,25 | 1,6 | 18,3 | 25 | 0 | 2 | 3 |
 | 2026-11-25 | 24h | 🔥 5 steelbooks 4K sortent aujourd'hui ·  | 0,0 | 404 | 4,16 | 6,5 | 5,0 | 13 | 0 | 0 | 0 |
+| 2026-11-20 | 7j | ⚔️ Deux éditions The Film Vault, une seu | 25,0 | 442 | 4,56 | 2,8 | 15,8 | 8 | 0 | 0 | 0 |
+| 2026-11-26 | 24h | 🔔 Resident Evil en steelbook 4K édition  | 11,2 | 318 | 2,92 | 3,2 | 6,3 | 9 | 0 | 0 | 1 |
+| 2026-11-26 | 24h | 🎧 Unboxing ASMR : Rocky et Michael en st | 101,6 | 785 | 10,87 | 1,1 | 8,9 | 33 | 1 | 2 | 1 |
