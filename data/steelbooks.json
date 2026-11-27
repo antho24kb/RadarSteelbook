@@ -291,6 +291,14 @@
     "image": "images/steelbooks/malfaisante-other-mommy.webp"
   },
   {
+    "id": "mystic-river",
+    "date": "2026-12-31",
+    "titre": "Mystic River",
+    "lien": "https://www.amazon.fr/dp/B0HSYHRLT5?tag=antho24kb-21",
+    "description": "Steelbook 4K.",
+    "image": "images/steelbooks/mystic-river.webp"
+  },
+  {
     "id": "jackie-chan-dans-le-bronx",
     "date": "2027-01-08",
     "titre": "Jackie Chan dans le Bronx",
