@@ -243,14 +243,6 @@
     "image": "images/steelbooks/spider-man-brand-new-day-steelbook-b.webp"
   },
   {
-    "id": "a-i-intelligence-artificielle",
-    "date": "2026-12-16",
-    "titre": "A.I. Intelligence artificielle",
-    "lien": "https://www.amazon.fr/s?k=A.I.%20Intelligence%20artificielle%204K%20steelbook&tag=antho24kb-21",
-    "description": "Steelbook 4K, sortie en France.",
-    "image": "images/steelbooks/a-i-intelligence-artificielle.webp"
-  },
-  {
     "id": "la-fin-doak-street",
     "date": "2026-12-16",
     "titre": "La Fin d'Oak Street",
@@ -273,6 +265,22 @@
     "lien": "https://www.amazon.fr/dp/B0HNPYZWTY?tag=antho24kb-21",
     "description": "Le classique de James Cameron, en steelbook 4K.",
     "image": "images/steelbooks/terminator.webp"
+  },
+  {
+    "id": "a-i-intelligence-artificielle",
+    "date": "2026-12-23",
+    "titre": "A.I. Intelligence artificielle",
+    "lien": "https://www.amazon.fr/s?k=A.I.%20Intelligence%20artificielle%204K%20steelbook&tag=antho24kb-21",
+    "description": "Steelbook 4K, sortie en France.",
+    "image": "images/steelbooks/a-i-intelligence-artificielle.webp",
+    "statut_date": "annoncee",
+    "date_sources": [
+      {
+        "source": "4k-ultra-hd.fr",
+        "valeur": "2026-12-23",
+        "vu_le": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "malfaisante-other-mommy",
@@ -388,11 +396,19 @@
   },
   {
     "id": "star-trek-original-collection",
-    "date": "2027-04-30",
+    "date": "2027-03-24",
     "titre": "Star Trek Original Collection",
     "lien": "https://www.amazon.fr/s?k=Star%20Trek%20Original%20Collection%204K%20steelbook&tag=antho24kb-21",
     "description": "Coffret avec steelbook 4K, sortie en France.",
-    "image": "images/steelbooks/star-trek-original-collection.webp"
+    "image": "images/steelbooks/star-trek-original-collection.webp",
+    "statut_date": "annoncee",
+    "date_sources": [
+      {
+        "source": "4k-ultra-hd.fr",
+        "valeur": "2027-03-24",
+        "vu_le": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "retour-a-silent-hill-collector-steelbook",
